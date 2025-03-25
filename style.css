@@ -1,0 +1,8 @@
+.page { display: none; padding: 20px; }
+.page.active { display: block; }
+
+.rating span { cursor: pointer; font-size: 24px; color: #ccc; }
+.rating span.active { color: #ffd700; }
+
+#reviewList { margin: 20px 0; }
+.review-item { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
