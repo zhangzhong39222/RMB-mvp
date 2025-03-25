@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RateMyBoss</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 搜索页 -->
+  <div id="searchPage" class="page active">
+    <input type="text" id="searchInput" placeholder="输入公司名称">
+    <button onclick="searchCompany()">搜索</button>
+    <div id="companyList"></div>
+  </div>
+
+  <!-- 公司页 -->
+  <div id="companyPage" class="page">
+    <h2 id="companyName"></h2>
+    <input type="text" id="bossNameInput" placeholder="输入主管姓名">
+    <button onclick="addBoss()">添加主管</button>
+    <div id="bossList"></div>
+  </div>
+
+  <!-- 主管页 -->
+  <div id="bossPage" class="page">
+    <h2 id="bossName"></h2>
+    <div id="reviewList"></div>
+    <textarea id="reviewContent" placeholder="输入评价（200字内）"></textarea>
+    <div class="rating">
+      <span onclick="setRating(1)">★</span>
+      <span onclick="setRating(2)">★</span>
+      <span onclick="setRating(3)">★</span>
+      <span onclick="setRating(4)">★</span>
+      <span onclick="setRating(5)">★</span>
+    </div>
+    <button onclick="submitReview()">提交评价</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
